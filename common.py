@@ -1,16 +1,23 @@
 import numpy as np
+from scipy.io import loadmat
+from scipy.sparse import issparse
 
-def loader(mode = "input", n = "10"):
+def loader(mode="input", n=10, path=None, dense=True):
+
     if mode == "input":
-        raw = input()  # Enter: [[1 2 3],[4 5 6]]
-
+        raw = input()
         rows = raw.strip()[2:-2].split("],[")
-        matrix = np.array([[int(x) for x in row.split()] for row in rows])
+        matrix = np.array([[float(x) for x in row.split()] for row in rows])
 
     elif mode == "generate":
-
-        n = int(input)
         rng = np.random.default_rng(seed=42)
-        matrix = np.arange(n * n).reshape(n, n)
-    
+        matrix = rng.integers(1, 10, size=(n, n)).astype(float)
+
+    elif mode == "suitesparse":
+        data = loadmat(path)
+        matrix = data["Problem"][0, 0]["A"].astype(float)
+
+        if dense and issparse(matrix):
+            matrix = matrix.toarray()
+
     return matrix
