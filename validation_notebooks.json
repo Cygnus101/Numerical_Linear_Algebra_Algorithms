@@ -1,0 +1,249 @@
+[
+  {
+    "notebook": "Cholesky.ipynb",
+    "status": "passed",
+    "scope": "small cases and real default dataset",
+    "seconds": 1.325669249985367,
+    "output": "Seconds: 2.834014594554901e-06\nFactorization probe error: 4.3985601092967664e-17\nRelative residual: 1.1563098121742844e-16\nRelative solution error: 1.812986607347358e-16\nMatrix: bcsstk09 shape: (1083, 1083)\nSeconds: 0.3957665410125628\nFactorization probe error: 3.0934283723843433e-16\nRelative residual: 5.48624854559892e-16\nRelative solution error: 1.5878343925306302e-13\nExpected failure: A must be positive definite\n",
+    "warnings": []
+  },
+  {
+    "notebook": "Cholesky_10^4.ipynb",
+    "status": "passed",
+    "scope": "small cases and real default dataset",
+    "seconds": 0.5540357079880778,
+    "output": "PyTorch: 2.8.0 Device: cpu\nSeconds: 9.691700688563287e-05\nFactorization probe error: 2.1260183910720774e-17\nRelative residual: 1.1563098121742844e-16\nRelative solution error: 1.812986607347358e-16\nMatrix: bcsstk09 shape: torch.Size([1083, 1083])\nSeconds: 0.4482247910054866\nFactorization probe error: 4.300495120957925e-16\nRelative residual: 8.077855698560227e-16\nRelative solution error: 1.358882922020654e-13\nExpected failure: Require positive definite A\n",
+    "warnings": []
+  },
+  {
+    "notebook": "Conjugate_Gradient.ipynb",
+    "status": "passed",
+    "scope": "small cases and real default dataset",
+    "seconds": 0.006553624989464879,
+    "output": "Seconds: 2.854198100976646e-05\n{'iterations': 3, 'residual': 1.635269018681959e-16, 'converged': True}\nRelative residual: 1.635269018681959e-16\nRelative solution error: 1.812986607347358e-16\nMatrix: bcsstk09 shape: (1083, 1083)\nSeconds: 0.003919708979083225\n{'iterations': 208, 'residual': 6.774770193875246e-09, 'converged': True}\nRelative residual: 6.774770193875246e-09\nRelative solution error: 3.57184086026316e-08\n",
+    "warnings": []
+  },
+  {
+    "notebook": "Conjugate_Gradient_10^4.ipynb",
+    "status": "passed",
+    "scope": "small cases and real default dataset",
+    "seconds": 0.048623208014760166,
+    "output": "PyTorch: 2.8.0 Device: cpu\nSeconds: 0.00011258301674388349\n{'iterations': 3, 'residual': 1.1563098121742844e-16, 'converged': True}\nRelative residual: 1.1563098121742844e-16\nRelative solution error: 1.2819751242557095e-16\nMatrix: bcsstk09 shape: torch.Size([1083, 1083])\nSeconds: 0.04057258300599642\n{'iterations': 208, 'residual': 6.7573577746868725e-09, 'converged': True}\nRelative residual: 6.7573577746868725e-09\nRelative solution error: 3.589499832386915e-08\n",
+    "warnings": [
+      "Sparse CSR tensor support is in beta state. If you miss a functionality in the sparse tensor support, please submit a feature request to https://github.com/pytorch/pytorch/issues. (Triggered internally at /Users/runner/work/pytorch/pytorch/pytorch/aten/src/ATen/SparseCsrTensorImpl.cpp:55.)"
+    ]
+  },
+  {
+    "notebook": "Gauss_Seidel.ipynb",
+    "status": "passed",
+    "scope": "small cases and real default dataset",
+    "seconds": 0.34233216699794866,
+    "output": "Seconds: 0.00022116699256002903\n{'iterations': 13, 'residual': 6.506843601237037e-09, 'converged': True}\nRelative residual: 6.506843601237037e-09\nRelative solution error: 1.2904784139758925e-08\nMatrix: bcsstk09 shape: (1083, 1083)\nSeconds: 0.2933070000144653\n{'iterations': 10000, 'residual': 7.191452929974568e-06, 'converged': False}\nRelative residual: 7.191452929974568e-06\nRelative solution error: 0.009007044840198432\n",
+    "warnings": []
+  },
+  {
+    "notebook": "Gauss_Seidel_10^4.ipynb",
+    "status": "passed",
+    "scope": "small cases and real default dataset",
+    "seconds": 0.34124599999631755,
+    "output": "Sparse CPU implementation\nSeconds: 0.00020524999126791954\n{'iterations': 13, 'residual': 6.506843601237037e-09, 'converged': True}\nRelative residual: 6.506843601237037e-09\nRelative solution error: 1.2904784139758925e-08\nMatrix: bcsstk09 shape: (1083, 1083)\nSeconds: 0.29161516699241474\n{'iterations': 10000, 'residual': 7.191452929974568e-06, 'converged': False}\nRelative residual: 7.191452929974568e-06\nRelative solution error: 0.009007044840198432\n",
+    "warnings": []
+  },
+  {
+    "notebook": "Gaussian_Elimination.ipynb",
+    "status": "passed",
+    "scope": "small cases and real default dataset",
+    "seconds": 2.1830590419995133,
+    "output": "x: [1. 1. 2.]\nRelative residual: 0.0\nMatrix shape: (1083, 1083)\nRelative residual: 8.648413581025025e-16\nRelative solution error: 1.3617573275410154e-13\nRelative residual: 1.0244779905844174e-16\nRelative solution error: 1.174242139134094e-09\nbcsstk09 seconds: 0.25031379199936055 residual: 8.648413581025025e-16 solution error: 1.3617573275410154e-13\nwest1505 seconds: 0.6959955420170445 residual: 1.0244779905844174e-16 solution error: 1.174242139134094e-09\n",
+    "warnings": []
+  },
+  {
+    "notebook": "Gaussian_elimination_10^4.ipynb",
+    "status": "passed",
+    "scope": "small cases and bcsstk09 CPU fallback; original 10^4 default not run",
+    "seconds": 0.14127433398971334,
+    "output": "PyTorch: 2.8.0\nDevice: CPU\nRepository example: [1. 1. 2.]\nRow-swap and input-preservation checks passed\nFile: data/bcsstk09.mat\nShape: (1083, 1083)\nEach dense float64 matrix: 0.01 GiB\ndtype: torch.float64 device: cpu\nGaussian elimination: 0.129746 s | relative residual 8.471e-16 | relative solution error 1.340e-13\n",
+    "warnings": []
+  },
+  {
+    "notebook": "Gradient_Descent.ipynb",
+    "status": "passed",
+    "scope": "small cases and real default dataset",
+    "seconds": 0.26135341700864956,
+    "output": "Seconds: 0.00013466598466038704\n{'iterations': 29, 'residual': 6.906902488316223e-09, 'converged': True}\nRelative residual: 6.906902488316223e-09\nRelative solution error: 1.5531091958866715e-08\nMatrix: bcsstk09 shape: (1083, 1083)\nSeconds: 0.2585509170021396\n{'iterations': 10000, 'residual': 4.904822697656618e-05, 'converged': False}\nRelative residual: 4.904822697656618e-05\nRelative solution error: 0.04932375437325897\n",
+    "warnings": []
+  },
+  {
+    "notebook": "Gradient_Descent_10^4.ipynb",
+    "status": "passed",
+    "scope": "small cases and real default dataset",
+    "seconds": 3.487393457995495,
+    "output": "PyTorch: 2.8.0 Device: cpu\nSeconds: 0.00040099999750964344\n{'iterations': 29, 'residual': 6.906902488316223e-09, 'converged': True}\nRelative residual: 6.906902488316223e-09\nRelative solution error: 1.5531091958866715e-08\nMatrix: bcsstk09 shape: torch.Size([1083, 1083])\nSeconds: 3.4831432919891085\n{'iterations': 10000, 'residual': 4.90482269761605e-05, 'converged': False}\nRelative residual: 4.90482269761605e-05\nRelative solution error: 0.04932375437308006\n",
+    "warnings": []
+  },
+  {
+    "notebook": "Gram_Schmidt.ipynb",
+    "status": "passed",
+    "scope": "small cases and real default dataset",
+    "seconds": 1.4345143749960698,
+    "output": "Seconds: 3.2920215744525194e-06\nFactorization probe error: 9.014365776215566e-17\nOrthogonality probe error: 6.820595562521237e-17\nMatrix: bcsstk09 shape: (1083, 1083)\nSeconds: 1.0721670410130173\nFactorization probe error: 6.185727894134834e-16\nOrthogonality probe error: 5.150833084607002e-06\n",
+    "warnings": [
+      "\u001b[1m\u001b[1mnp.dot() is faster on contiguous arrays, called on (Array(float64, 1, 'A', False, aligned=True), Array(float64, 1, 'A', False, aligned=True))\u001b[0m\u001b[0m",
+      "\u001b[1m\u001b[1mnp.dot() is faster on contiguous arrays, called on (Array(float64, 1, 'A', False, aligned=True), Array(float64, 1, 'F', False, aligned=True))\u001b[0m\u001b[0m"
+    ]
+  },
+  {
+    "notebook": "Gram_Schmidt_10^4.ipynb",
+    "status": "passed",
+    "scope": "small cases and real default dataset",
+    "seconds": 0.09322145898477174,
+    "output": "PyTorch: 2.8.0 Device: cpu\nSeconds: 8.858297951519489e-05\nFactorization probe error: 5.102202614467184e-17\nOrthogonality probe error: 4.6672493250575615e-17\nMatrix: bcsstk09 shape: torch.Size([1083, 1083])\nSeconds: 0.08776079100789502\nFactorization probe error: 1.2667070346728864e-15\nOrthogonality probe error: 4.833894053709923e-07\n",
+    "warnings": []
+  },
+  {
+    "notebook": "Householder_QR.ipynb",
+    "status": "passed",
+    "scope": "small cases and real default dataset",
+    "seconds": 1.3380490000126883,
+    "output": "Seconds: 3.6669953260570765e-06\nFactorization probe error: 6.760058868449193e-16\nOrthogonality probe error: 7.320662154861416e-16\nMatrix: bcsstk09 shape: (1083, 1083)\nSeconds: 0.9295525829948019\nFactorization probe error: 1.4549722042070065e-15\nOrthogonality probe error: 1.9652788506677113e-15\n",
+    "warnings": [
+      "\u001b[1m\u001b[1mnp.dot() is faster on contiguous arrays, called on (Array(float64, 1, 'C', False, aligned=True), Array(float64, 1, 'A', False, aligned=True))\u001b[0m\u001b[0m"
+    ]
+  },
+  {
+    "notebook": "Householder_QR_10^4.ipynb",
+    "status": "passed",
+    "scope": "small cases and real default dataset",
+    "seconds": 0.8480349169985857,
+    "output": "PyTorch: 2.8.0 Device: cpu\nSeconds: 0.00012591699487529695\nFactorization probe error: 5.562742479194265e-16\nOrthogonality probe error: 6.916308371891891e-16\nMatrix: bcsstk09 shape: torch.Size([1083, 1083])\nSeconds: 0.7994215420039836\nFactorization probe error: 1.1374880331738198e-15\nOrthogonality probe error: 1.4552472440678562e-15\n",
+    "warnings": []
+  },
+  {
+    "notebook": "Inverse_Power_Method.ipynb",
+    "status": "passed",
+    "scope": "small cases and real default dataset",
+    "seconds": 0.009117500012507662,
+    "output": "Seconds: 0.00024204200599342585\nEigenvalue: 1.2679491924311226\n{'iterations': 21, 'residual': 5.2147218210126215e-09, 'converged': True}\nSmall reference eigenvalues: [1.26794919 3.         4.73205081]\nMatrix: bcsstk09 shape: (1083, 1083)\nSeconds: 0.005353499989723787\nEigenvalue: 7102.2290572329\n{'iterations': 16, 'residual': 3.476825270405286e-09, 'converged': True}\n",
+    "warnings": []
+  },
+  {
+    "notebook": "Inverse_Power_Method_10^4.ipynb",
+    "status": "passed",
+    "scope": "small cases and real default dataset",
+    "seconds": 0.008571666985517368,
+    "output": "Sparse CPU implementation\nSeconds: 0.0002463329874444753\nEigenvalue: 1.2679491924311226\n{'iterations': 21, 'residual': 5.2147218210126215e-09, 'converged': True}\nSmall reference eigenvalues: [1.26794919 3.         4.73205081]\nMatrix: bcsstk09 shape: (1083, 1083)\nSeconds: 0.004824375006137416\nEigenvalue: 7102.2290572329\n{'iterations': 16, 'residual': 3.476825270405286e-09, 'converged': True}\n",
+    "warnings": []
+  },
+  {
+    "notebook": "Jacobi.ipynb",
+    "status": "passed",
+    "scope": "small cases and real default dataset",
+    "seconds": 0.15247470801114105,
+    "output": "Seconds: 0.00012120799510739744\n{'iterations': 27, 'residual': 7.026334836242635e-09, 'converged': True}\nRelative residual: 7.026334836242635e-09\nRelative solution error: 7.484994579989294e-09\nMatrix: bcsstk09 shape: (1083, 1083)\nSeconds: 0.15012299999943934\n{'iterations': 10000, 'residual': 4.9106471066607285e-05, 'converged': False}\nRelative residual: 4.9106471066607285e-05\nRelative solution error: 0.06521026058561424\n",
+    "warnings": []
+  },
+  {
+    "notebook": "Jacobi_10^4.ipynb",
+    "status": "passed",
+    "scope": "small cases and real default dataset",
+    "seconds": 1.7487767080019694,
+    "output": "PyTorch: 2.8.0 Device: cpu\nSeconds: 0.0002650840033311397\n{'iterations': 27, 'residual': 7.026334756428559e-09, 'converged': True}\nRelative residual: 7.026334756428559e-09\nRelative solution error: 7.484994481756535e-09\nMatrix: bcsstk09 shape: torch.Size([1083, 1083])\nSeconds: 1.744805666996399\n{'iterations': 10000, 'residual': 4.9106471066607285e-05, 'converged': False}\nRelative residual: 4.9106471066607285e-05\nRelative solution error: 0.06521026058561424\n",
+    "warnings": []
+  },
+  {
+    "notebook": "LU_Column.ipynb",
+    "status": "passed",
+    "scope": "small cases and real default dataset",
+    "seconds": 1.3479631670052186,
+    "output": "Seconds: 3.0830269679427147e-06\nFactorization probe error: 3.93419176300259e-17\nRelative residual: 0.0\nRelative solution error: 0.0\nMatrix: bcsstk09 shape: (1083, 1083)\nSeconds: 0.41935533401556313\nFactorization probe error: 3.9111002482931013e-16\nRelative residual: 8.155022779321071e-16\nRelative solution error: 1.5372172278821023e-13\n",
+    "warnings": []
+  },
+  {
+    "notebook": "LU_Column_10^4.ipynb",
+    "status": "passed",
+    "scope": "small cases and real default dataset",
+    "seconds": 4.007830416987417,
+    "output": "PyTorch: 2.8.0 Device: cpu\nSeconds: 6.641598884016275e-05\nFactorization probe error: 3.6014958936256715e-17\nRelative residual: 0.0\nRelative solution error: 0.0\nMatrix: bcsstk09 shape: torch.Size([1083, 1083])\nSeconds: 3.9812726250092965\nFactorization probe error: 4.2265188588597464e-16\nRelative residual: 7.830347696414599e-16\nRelative solution error: 1.5813436424713308e-13\n",
+    "warnings": []
+  },
+  {
+    "notebook": "LU_Partial_Pivoting.ipynb",
+    "status": "passed",
+    "scope": "small cases and real default dataset",
+    "seconds": 1.2077782079868484,
+    "output": "Seconds: 4.250003257766366e-06\nFactorization probe error: 2.4033730387553828e-17\nRelative residual: 0.0\nRelative solution error: 0.0\nMatrix: west1505 shape: (1505, 1505)\nSeconds: 0.9503162500041071\nFactorization probe error: 1.1147514680479116e-16\nRelative residual: 9.414870270109185e-17\nRelative solution error: 1.4018832658800125e-09\n",
+    "warnings": []
+  },
+  {
+    "notebook": "LU_Partial_Pivoting_10^4.ipynb",
+    "status": "passed",
+    "scope": "small cases and real default dataset",
+    "seconds": 1.292482458986342,
+    "output": "PyTorch: 2.8.0 Device: cpu\nSeconds: 0.00011716599692590535\nFactorization probe error: 2.4194904286758324e-17\nRelative residual: 0.0\nRelative solution error: 0.0\nMatrix: west1505 shape: torch.Size([1505, 1505])\nSeconds: 1.248228874988854\nFactorization probe error: 8.493234649203969e-17\nRelative residual: 1.1402289351132254e-16\nRelative solution error: 2.400583706488803e-09\n",
+    "warnings": []
+  },
+  {
+    "notebook": "LU_Row.ipynb",
+    "status": "passed",
+    "scope": "small cases and real default dataset",
+    "seconds": 0.5357585830206517,
+    "output": "Seconds: 3.249995643272996e-06\nFactorization probe error: 3.93419176300259e-17\nRelative residual: 0.0\nRelative solution error: 0.0\nMatrix: bcsstk09 shape: (1083, 1083)\nSeconds: 0.39141695899888873\nFactorization probe error: 3.9111002482931013e-16\nRelative residual: 8.155022779321071e-16\nRelative solution error: 1.5372172278821023e-13\n",
+    "warnings": []
+  },
+  {
+    "notebook": "LU_Row_10^4.ipynb",
+    "status": "passed",
+    "scope": "small cases and real default dataset",
+    "seconds": 4.487999958975706,
+    "output": "PyTorch: 2.8.0 Device: cpu\nSeconds: 6.61670055706054e-05\nFactorization probe error: 2.6640581837783693e-17\nRelative residual: 0.0\nRelative solution error: 0.0\nMatrix: bcsstk09 shape: torch.Size([1083, 1083])\nSeconds: 4.464749375008978\nFactorization probe error: 4.0831853099358595e-16\nRelative residual: 7.830347696414599e-16\nRelative solution error: 1.5813436424713308e-13\n",
+    "warnings": []
+  },
+  {
+    "notebook": "Newton_Method.ipynb",
+    "status": "passed",
+    "scope": "small cases and real default dataset",
+    "seconds": 0.005858749995240942,
+    "output": "Seconds: 2.9458984499797225e-05\n{'iterations': 1, 'residual': 1.1563098121742844e-16, 'converged': True}\nRelative residual: 1.1563098121742844e-16\nRelative solution error: 1.812986607347358e-16\nMatrix: bcsstk09 shape: (1083, 1083)\nSeconds: 0.00329108300502412\n{'iterations': 1, 'residual': 7.722548142601909e-16, 'converged': True}\nRelative residual: 7.722548142601909e-16\nRelative solution error: 2.4262438939068703e-13\n",
+    "warnings": []
+  },
+  {
+    "notebook": "Newton_Method_10^4.ipynb",
+    "status": "passed",
+    "scope": "small cases and real default dataset",
+    "seconds": 0.006173292000312358,
+    "output": "Sparse CPU implementation\nSeconds: 2.5792018277570605e-05\n{'iterations': 1, 'residual': 1.1563098121742844e-16, 'converged': True}\nRelative residual: 1.1563098121742844e-16\nRelative solution error: 1.812986607347358e-16\nMatrix: bcsstk09 shape: (1083, 1083)\nSeconds: 0.0030132920073810965\n{'iterations': 1, 'residual': 7.722548142601909e-16, 'converged': True}\nRelative residual: 7.722548142601909e-16\nRelative solution error: 2.4262438939068703e-13\n",
+    "warnings": []
+  },
+  {
+    "notebook": "Power_Method.ipynb",
+    "status": "passed",
+    "scope": "small cases and real default dataset",
+    "seconds": 0.05401708299177699,
+    "output": "Seconds: 0.00023637499543838203\nEigenvalue: 4.732050807568876\n{'iterations': 40, 'residual': 7.541690497530085e-09, 'converged': True}\nSmall reference eigenvalues: [1.26794919 3.         4.73205081]\nMatrix: bcsstk17 shape: (10974, 10974)\nSeconds: 0.03638920799130574\nEigenvalue: 12960615797.98147\n{'iterations': 166, 'residual': 9.15101678846526e-09, 'converged': True}\n",
+    "warnings": []
+  },
+  {
+    "notebook": "Power_Method_10^4.ipynb",
+    "status": "passed",
+    "scope": "small cases and real default dataset",
+    "seconds": 0.593781042000046,
+    "output": "PyTorch: 2.8.0 Device: cpu\nSeconds: 0.00044291699305176735\nEigenvalue: 4.732050807568876\n{'iterations': 32, 'residual': 6.689144499709396e-09, 'converged': True}\nSmall reference eigenvalues: tensor([1.2679, 3.0000, 4.7321], dtype=torch.float64)\nMatrix: bcsstk17 shape: torch.Size([10974, 10974])\nSeconds: 0.568379833974177\nEigenvalue: 12960615797.981464\n{'iterations': 158, 'residual': 9.84961809516094e-09, 'converged': True}\n",
+    "warnings": []
+  },
+  {
+    "notebook": "SOR.ipynb",
+    "status": "passed",
+    "scope": "small cases and real default dataset",
+    "seconds": 0.3373625000240281,
+    "output": "Seconds: 0.0001784999913070351\n{'iterations': 9, 'residual': 9.526474738055963e-10, 'converged': True}\nRelative residual: 9.526474738055963e-10\nRelative solution error: 1.0407099751725952e-09\nMatrix: bcsstk09 shape: (1083, 1083)\nSeconds: 0.2896618749946356\n{'iterations': 10000, 'residual': 3.118552837186666e-06, 'converged': False}\nRelative residual: 3.118552837186666e-06\nRelative solution error: 0.0038035137417961385\n",
+    "warnings": []
+  },
+  {
+    "notebook": "SOR_10^4.ipynb",
+    "status": "passed",
+    "scope": "small cases and real default dataset",
+    "seconds": 0.33791741699678823,
+    "output": "Sparse CPU implementation\nSeconds: 0.00018274999456480145\n{'iterations': 9, 'residual': 9.526474738055963e-10, 'converged': True}\nRelative residual: 9.526474738055963e-10\nRelative solution error: 1.0407099751725952e-09\nMatrix: bcsstk09 shape: (1083, 1083)\nSeconds: 0.29003208299400285\n{'iterations': 10000, 'residual': 3.118552837186666e-06, 'converged': False}\nRelative residual: 3.118552837186666e-06\nRelative solution error: 0.0038035137417961385\n",
+    "warnings": []
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "notebook": "Cholesky_10^4.ipynb",
+    "status": "passed",
+    "scope": "format/syntax, 3x3 execution, bcsstk17 discovery and sparse load; full 10^4 algorithms not rerun",
+    "output": "PyTorch: 2.8.0 Device: cpu\nSeconds: 9.654200403019786e-05\nFactorization probe error: 1.2060565603674348e-16\nRelative residual: 1.1563098121742844e-16\nRelative solution error: 1.812986607347358e-16\nVerified bcsstk17 path: data/bcsstk17.mat shape: (10974, 10974) nnz: 428650\n"
+  },
+  {
+    "notebook": "Conjugate_Gradient_10^4.ipynb",
+    "status": "passed",
+    "scope": "format/syntax, 3x3 execution, bcsstk17 discovery and sparse load; full 10^4 algorithms not rerun",
+    "output": "PyTorch: 2.8.0 Device: cpu\nSeconds: 0.00010912498692050576\n{'iterations': 3, 'residual': 1.1563098121742844e-16, 'converged': True}\nRelative residual: 1.1563098121742844e-16\nRelative solution error: 1.2819751242557095e-16\nVerified bcsstk17 path: data/bcsstk17.mat shape: (10974, 10974) nnz: 428650\n"
+  },
+  {
+    "notebook": "Gauss_Seidel_10^4.ipynb",
+    "status": "passed",
+    "scope": "format/syntax, 3x3 execution, bcsstk17 discovery and sparse load; full 10^4 algorithms not rerun",
+    "output": "Sparse CPU implementation\nSeconds: 0.00020249999943189323\n{'iterations': 13, 'residual': 6.506843601237037e-09, 'converged': True}\nRelative residual: 6.506843601237037e-09\nRelative solution error: 1.2904784139758925e-08\nVerified bcsstk17 path: data/bcsstk17.mat shape: (10974, 10974) nnz: 428650\n"
+  },
+  {
+    "notebook": "Gradient_Descent_10^4.ipynb",
+    "status": "passed",
+    "scope": "format/syntax, 3x3 execution, bcsstk17 discovery and sparse load; full 10^4 algorithms not rerun",
+    "output": "PyTorch: 2.8.0 Device: cpu\nSeconds: 0.0003555000002961606\n{'iterations': 29, 'residual': 6.906902488316223e-09, 'converged': True}\nRelative residual: 6.906902488316223e-09\nRelative solution error: 1.5531091958866715e-08\nVerified bcsstk17 path: data/bcsstk17.mat shape: (10974, 10974) nnz: 428650\n"
+  },
+  {
+    "notebook": "Gram_Schmidt_10^4.ipynb",
+    "status": "passed",
+    "scope": "format/syntax, 3x3 execution, bcsstk17 discovery and sparse load; full 10^4 algorithms not rerun",
+    "output": "PyTorch: 2.8.0 Device: cpu\nSeconds: 8.662499021738768e-05\nFactorization probe error: 7.67360602595358e-18\nOrthogonality probe error: 1.3226784573724605e-16\nVerified bcsstk17 path: data/bcsstk17.mat shape: (10974, 10974) nnz: 428650\n"
+  },
+  {
+    "notebook": "Householder_QR_10^4.ipynb",
+    "status": "passed",
+    "scope": "format/syntax, 3x3 execution, bcsstk17 discovery and sparse load; full 10^4 algorithms not rerun",
+    "output": "PyTorch: 2.8.0 Device: cpu\nSeconds: 0.00011020898818969727\nFactorization probe error: 4.587758584889137e-16\nOrthogonality probe error: 4.961858698481834e-16\nVerified bcsstk17 path: data/bcsstk17.mat shape: (10974, 10974) nnz: 428650\n"
+  },
+  {
+    "notebook": "Inverse_Power_Method_10^4.ipynb",
+    "status": "passed",
+    "scope": "format/syntax, 3x3 execution, bcsstk17 discovery and sparse load; full 10^4 algorithms not rerun",
+    "output": "Sparse CPU implementation\nSeconds: 0.00022495799930766225\nEigenvalue: 1.2679491924311226\n{'iterations': 21, 'residual': 5.2147218210126215e-09, 'converged': True}\nSmall reference eigenvalues: [1.26794919 3.         4.73205081]\nVerified bcsstk17 path: data/bcsstk17.mat shape: (10974, 10974) nnz: 428650\n"
+  },
+  {
+    "notebook": "Jacobi_10^4.ipynb",
+    "status": "passed",
+    "scope": "format/syntax, 3x3 execution, bcsstk17 discovery and sparse load; full 10^4 algorithms not rerun",
+    "output": "PyTorch: 2.8.0 Device: cpu\nSeconds: 0.00025549999554641545\n{'iterations': 27, 'residual': 7.026334756428559e-09, 'converged': True}\nRelative residual: 7.026334756428559e-09\nRelative solution error: 7.484994481756535e-09\nVerified bcsstk17 path: data/bcsstk17.mat shape: (10974, 10974) nnz: 428650\n"
+  },
+  {
+    "notebook": "LU_Column_10^4.ipynb",
+    "status": "passed",
+    "scope": "format/syntax, 3x3 execution, bcsstk17 discovery and sparse load; full 10^4 algorithms not rerun",
+    "output": "PyTorch: 2.8.0 Device: cpu\nSeconds: 9.075002162717283e-05\nFactorization probe error: 1.2647835117098627e-16\nRelative residual: 0.0\nRelative solution error: 0.0\nVerified bcsstk17 path: data/bcsstk17.mat shape: (10974, 10974) nnz: 428650\n"
+  },
+  {
+    "notebook": "LU_Partial_Pivoting_10^4.ipynb",
+    "status": "passed",
+    "scope": "format/syntax, 3x3 execution, bcsstk17 discovery and sparse load; full 10^4 algorithms not rerun",
+    "output": "PyTorch: 2.8.0 Device: cpu\nSeconds: 0.0001340000017080456\nFactorization probe error: 3.5349215034638504e-17\nRelative residual: 0.0\nRelative solution error: 0.0\nVerified bcsstk17 path: data/bcsstk17.mat shape: (10974, 10974) nnz: 428650\n"
+  },
+  {
+    "notebook": "LU_Row_10^4.ipynb",
+    "status": "passed",
+    "scope": "format/syntax, 3x3 execution, bcsstk17 discovery and sparse load; full 10^4 algorithms not rerun",
+    "output": "PyTorch: 2.8.0 Device: cpu\nSeconds: 5.9125013649463654e-05\nFactorization probe error: 0.0\nRelative residual: 0.0\nRelative solution error: 0.0\nVerified bcsstk17 path: data/bcsstk17.mat shape: (10974, 10974) nnz: 428650\n"
+  },
+  {
+    "notebook": "Newton_Method_10^4.ipynb",
+    "status": "passed",
+    "scope": "format/syntax, 3x3 execution, bcsstk17 discovery and sparse load; full 10^4 algorithms not rerun",
+    "output": "Sparse CPU implementation\nSeconds: 2.7291011065244675e-05\n{'iterations': 1, 'residual': 1.1563098121742844e-16, 'converged': True}\nRelative residual: 1.1563098121742844e-16\nRelative solution error: 1.812986607347358e-16\nVerified bcsstk17 path: data/bcsstk17.mat shape: (10974, 10974) nnz: 428650\n"
+  },
+  {
+    "notebook": "Power_Method_10^4.ipynb",
+    "status": "passed",
+    "scope": "format/syntax, 3x3 execution, bcsstk17 discovery and sparse load; full 10^4 algorithms not rerun",
+    "output": "PyTorch: 2.8.0 Device: cpu\nSeconds: 0.0004304169851820916\nEigenvalue: 4.732050807568876\n{'iterations': 32, 'residual': 6.689144499709396e-09, 'converged': True}\nSmall reference eigenvalues: tensor([1.2679, 3.0000, 4.7321], dtype=torch.float64)\nVerified bcsstk17 path: data/bcsstk17.mat shape: (10974, 10974) nnz: 428650\n"
+  },
+  {
+    "notebook": "SOR_10^4.ipynb",
+    "status": "passed",
+    "scope": "format/syntax, 3x3 execution, bcsstk17 discovery and sparse load; full 10^4 algorithms not rerun",
+    "output": "Sparse CPU implementation\nSeconds: 0.00017087499145418406\n{'iterations': 9, 'residual': 9.526474738055963e-10, 'converged': True}\nRelative residual: 9.526474738055963e-10\nRelative solution error: 1.0407099751725952e-09\nVerified bcsstk17 path: data/bcsstk17.mat shape: (10974, 10974) nnz: 428650\n"
+  },
+  {
+    "notebook": "Gaussian_elimination_10^4.ipynb",
+    "status": "passed",
+    "scope": "format/syntax, 3x3 execution, bcsstk17 discovery and sparse load; full 10^4 algorithms not rerun",
+    "output": "PyTorch: 2.8.0\nDevice: CPU\nRepository example: [1. 1. 2.]\nRow-swap and input-preservation checks passed\nFile: data/bcsstk17.mat\nVerified bcsstk17 path: data/bcsstk17.mat shape: (10974, 10974) nnz: 428650\n"
+  }
+]

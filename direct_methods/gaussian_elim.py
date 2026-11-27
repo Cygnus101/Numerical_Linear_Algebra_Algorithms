@@ -13,6 +13,8 @@ def gaussian(A,b):
 
     n = len(A)
     for k in range(n-1):    #pivot
+        if A[k,k] == 0:
+            raise ValueError("Zero pivot encountered")
         d = 1/A[k,k]
         for i in range(k+1,n):  #every row below pivot
             A[i,k] *= d        #use the values below pivot to store l
@@ -20,11 +22,13 @@ def gaussian(A,b):
             for j in range(k+1,n):  #every column to left of pivot
                 A[i,j] -= A[i,k]*A[k,j]     #a[i,j] -= l[i,k]*a[k,j]
 
+    if A[n-1,n-1] == 0:
+        raise ValueError("Zero pivot encountered")
     return A,b
 
 
 @njit
-
+ 
 def gaussian_with_partial_pivoting(A,b):
     n = len(A)
 
@@ -51,4 +55,6 @@ def gaussian_with_partial_pivoting(A,b):
             for j in range(k+1,n):
                 A[i,j] -= A[i,k]*A[k,j]
 
+    if A[n-1,n-1] == 0:
+        raise ValueError("Zero pivot encountered")
     return A,b

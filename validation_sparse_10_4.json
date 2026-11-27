@@ -1,0 +1,44 @@
+[
+  {
+    "method": "conjugate_gradient",
+    "matrix": "bcsstk17",
+    "shape": [
+      10974,
+      10974
+    ],
+    "nnz": 428650,
+    "seconds": 2.402231457992457,
+    "iterations": 10000,
+    "residual": 1.2667202060065322e-06,
+    "converged": false,
+    "solution_error": 0.21554165233686987
+  },
+  {
+    "method": "newton",
+    "matrix": "bcsstk17",
+    "shape": [
+      10974,
+      10974
+    ],
+    "nnz": 428650,
+    "seconds": 0.1529539999901317,
+    "iterations": 1,
+    "residual": 2.0828013863267047e-15,
+    "converged": true,
+    "solution_error": 3.432604558997985e-12
+  },
+  {
+    "method": "inverse_power_method",
+    "matrix": "bcsstk17",
+    "shape": [
+      10974,
+      10974
+    ],
+    "nnz": 428650,
+    "seconds": 0.16253487500944175,
+    "iterations": 5,
+    "residual": 6.465798715687977e-11,
+    "converged": true,
+    "eigenvalue": 1.0
+  }
+]
